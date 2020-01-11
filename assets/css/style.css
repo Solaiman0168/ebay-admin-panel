@@ -512,3 +512,18 @@ body {
   z-index: -1;
 }*/
 
+.dropdown-menu-n{
+   /* transform: translate3d(0px, 5px, 0px);*/
+    top: 42px!important;
+    left: auto!important;
+    right: 0px!important;
+    position: absolute;
+    /*will-change: transform;*/
+}
+
+
+.sticky-nav {
+  position: sticky;
+  top : 0;
+  z-index: 99999;
+}
