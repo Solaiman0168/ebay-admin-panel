@@ -509,7 +509,7 @@ body {
 
 .dropdown-menu-n{
    /* transform: translate3d(0px, 5px, 0px);*/
-    top: 42px!important;
+    top: 40px!important;
     left: auto!important;
     right: 0px!important;
     position: absolute;
@@ -521,6 +521,13 @@ body {
   position: sticky;
   top : 0;
   z-index: 99999;
+  height: 3.2rem;
+  background-color: #31353d!important;
+  z-index: 999!important;
+}
+
+#show-sidebar{
+  z-index: 999!important;
 }
 
 .dropdown-profile-img{
