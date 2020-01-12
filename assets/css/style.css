@@ -495,11 +495,6 @@ body {
     pointer-events: none;
 }
 
-@media screen and (min-width: 432px) {
-  .dropdown img {
-    width: 3%!important;
-  }
-}
 
 
 /*.div .relative {
@@ -526,4 +521,11 @@ body {
   position: sticky;
   top : 0;
   z-index: 99999;
+}
+
+.dropdown-profile-img{
+  margin-right: 1rem;
+  margin-top: .4rem;
+  width: 35px;
+  min-width: 35px;
 }
