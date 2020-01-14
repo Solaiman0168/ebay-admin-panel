@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Responsive sidebar template with sliding effect and dropdown menu based on bootstrap 4">
+    <title>Ebay Admin Panel template</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css">
+
+</head>
+
+<body>
+
+<!-- top navbar-->
+<div class="sticky-nav">
+  <div class="dropdown"> 
+    <a href="dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+     <img class="float-right rounded-circle img-responsive dropdown-profile-img" src="assets/images/admin.jpg" alt="IMAGE"> 
+    </a> 
+    <div class="dropdown-menu dropdown-menu-n" aria-labelledby="dropdownMenuButton">
+      <a class="dropdown-item" href="#">Profile</a>
+      <a class="dropdown-item" href="#">setting</a>
+      <a class="dropdown-item" href="#">Log out</a>
+    </div>
+  </div>
+</div>
+
+
+<div class="page-wrapper chiller-theme toggled">
+  <a id="show-sidebar" class="btn btn-sm btn-dark" href="#">
+    <i class="fas fa-bars"></i>
+  </a>
+  <nav id="sidebar" class="sidebar-wrapper">
+    <div class="sidebar-content">
+      <div class="sidebar-brand">
+        <a href="index.html">Ebay Admin Panel</a>
+        <div id="close-sidebar">
+          <i class="fa fa-bars"></i>
+        </div>
+      </div>
+      <div class="sidebar-header">
+        <div class="user-pic">
+          <img class="img-responsive img-rounded" src="https://raw.githubusercontent.com/azouaoui-med/pro-sidebar-template/gh-pages/src/img/user.jpg"
+            alt="User picture">
+        </div>
+        <div class="user-info">
+          <span class="user-name">Jhon
+            <strong>Smith</strong>
+          </span>
+          <span class="user-role">Administrator</span>
+          <span class="user-status">
+            <i class="fa fa-circle"></i>
+            <span>Online</span>
+          </span>
+        </div>
+      </div>
+      <!-- sidebar-header  -->
+   
+      <!-- sidebar-search  -->
+      <div class="sidebar-menu">
+        <ul>
+          <li class="header-menu">
+            <span>General</span>
+          </li>
+          
+          <li class="sidebar-dropdown">
+            <a href="#">
+              <i class="far fa-gem"></i>
+              <span>Components</span>
+            </a>
+            <div class="sidebar-submenu">
+              <ul>
+                <li>
+                  <a href="table.html">Tables</a>
+                </li>
+                <li>
+                  <a href="form.html">Forms</a>
+                </li>
+                <li>
+                  <a href="profile_edit.html">Forms</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+         
+        </ul>
+      </div>
+      <!-- sidebar-menu  -->
+    </div>
+    <!-- sidebar-content  -->
+ 
+  </nav>
+  <!-- sidebar-wrapper  -->
+
+
+  <main class="page-content">
+    <div class="container-fluid">
+    
+      <h2> Profile Edit </h2>
+      <hr>
+      <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 mt-3">
+          <form action="" method="post">
+            <div class="row">
+              <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="form-group row">
+                  <label for="full_name" class="col-sm-3 col-form-label">Full Name</label>
+                  <div class="col-sm-9">
+                    <input type="text" class="form-control" id="full_name" placeholder="Full Name">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="inputEmail3" class="col-sm-3 col-form-label">Email</label>
+                  <div class="col-sm-9">
+                    <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="phone" class="col-sm-3 col-form-label">Phone</label>
+                  <div class="col-sm-9">
+                    <input type="text" class="form-control" id="phone" placeholder="Phone">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="inputPassword3" class="col-sm-3 col-form-label">Password</label>
+                  <div class="col-sm-9">
+                    <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+                  </div>
+                </div>
+                 <div class="form-group row">
+                  <label for="inputconfirmPassword3" class="col-sm-3 col-form-label">Confirm Password</label>
+                  <div class="col-sm-9">
+                    <input type="password" class="form-control" id="inputconfirmPassword3" placeholder="Confirm Password">
+                  </div>
+                </div>  
+            </div> <!--//end col-6 -->
+
+            <div class="col-lg-6 col-md-6 col-sm-12">
+              <div class="form-group row">
+                <label for="status" class="col-sm-3 col-form-label">Status</label>
+                <div class="col-sm-9">
+                  <select name="status" class="form-control">
+                    <option>Select Status</option>
+                    <option>ABC</option>
+                    <option>BCD</option>
+                    <option>CDF</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group row">
+                <label for="role" class="col-sm-3 col-form-label">Role</label>
+                <div class="col-sm-9">
+                  <select name="role" class="form-control">
+                  <option>Select Role</option>
+                  <option>Admin</option>
+                  <option>User</option>
+                  <option>User</option>
+                </select>
+                </div>
+              </div>
+
+              <div class="form-group row">
+                <label for="credit" class="col-sm-3 col-form-label">Credits</label>
+                <div class="col-sm-9">
+                  <input type="text" class="form-control" id="credit" placeholder="Enter Credit No">
+                </div>
+              </div>
+            </div> <!--// end col-6 -->
+
+            </div> <!--// end row -->
+
+            <hr>
+
+            <div class="form-group row">
+              <div class="col-sm-4"></div>
+              <div class="col-sm-4">
+                <button style="margin-left: 8rem;" type="submit" class="btn btn-primary mt-3">Edit</button>
+              </div>
+              <div class="col-sm-4"></div>
+            </div>
+
+          </form> <!-- end form  -->
+        </div> <!-- end col-lg-12  -->
+      </div> <!-- end row  -->
+    </div>
+
+  </main>
+  <!-- page-content" -->
+
+    </div>
+<!-- page-wrapper -->
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js"></script>
+    <script type="text/javascript" src=""></script>
+
+
+<script type="text/javascript">
+  $(document).ready(function() {
+    $('#example').DataTable();
+} );
+</script>
+
+<script type="text/javascript">
+	jQuery(function ($) {
+
+    $(".sidebar-dropdown > a").click(function() {
+  $(".sidebar-submenu").slideUp(200);
+  if (
+    $(this)
+      .parent()
+      .hasClass("active")
+  ) {
+    $(".sidebar-dropdown").removeClass("active");
+    $(this)
+      .parent()
+      .removeClass("active");
+  } else {
+    $(".sidebar-dropdown").removeClass("active");
+    $(this)
+      .next(".sidebar-submenu")
+      .slideDown(200);
+    $(this)
+      .parent()
+      .addClass("active");
+  }
+});
+
+$("#close-sidebar").click(function() {
+  $(".page-wrapper").removeClass("toggled");
+});
+$("#show-sidebar").click(function() {
+  $(".page-wrapper").addClass("toggled");
+});
+
+   
+   
+});
+
+
+</script>
+
+    
+</body>
+
+</html>
